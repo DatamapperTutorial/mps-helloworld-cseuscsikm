@@ -1,17 +1,32 @@
 <?xml version = "1.0"?>
 <DataMapping>  
-  <FileEncoding>IBM_852</FileEncoding>
+  <FileEncoding>UTF_8_BOM</FileEncoding>
   <FormatList></FormatList>
-  <ParamDef></ParamDef>
-  <SourceDefList>    
-    <SourceDef name="Dolgozok">      
-      <EntityRef entity="Person" alias="p" />
-      <OrderBy></OrderBy>
-    </SourceDef>
-  </SourceDefList>
+  <ParamDef>    
+    <Parameter name="Név" type="StringType" caption="Név" dictionaryId="" />
+  </ParamDef>
+  <SourceDefList></SourceDefList>
   <FilterDef></FilterDef>
   <MappingDefList>    
-    <ParameterMappingDef name=""></ParameterMappingDef>
+    <ParameterMappingDef name="Név összeállítása">      
+      <ValueDef name="Hello world">        
+        <Function name="Concatenate">          
+          <StringLiteral value="Hello world" />
+          <ParamValue name="Név" />
+        </Function>
+        <FormatList></FormatList>
+      </ValueDef>
+    </ParameterMappingDef>
   </MappingDefList>
-  <Renderings></Renderings>
+  <Renderings>    
+    <TXTRenderingDef>      
+      <Filename value="Fájlnév.txt" />
+      <HeaderType value="no" />
+      <CustomHeader value="" />
+      <EOF value="false" />
+      <MappingDefs>        
+        <MappingDefRef name="Név összeállítása" />
+      </MappingDefs>
+    </TXTRenderingDef>
+  </Renderings>
 </DataMapping>

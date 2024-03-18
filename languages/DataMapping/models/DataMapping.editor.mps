@@ -1373,7 +1373,7 @@
                                 <node concept="2OqwBi" id="46dRhkcG1kK" role="3clFbG">
                                   <node concept="2OqwBi" id="46dRhkcG1kL" role="2Oq$k0">
                                     <node concept="37vLTw" id="46dRhkcG1kM" role="2Oq$k0">
-                                      <ref role="3cqZAo" node="K0faAtKH87" />
+                                      <ref role="3cqZAo" node="K0faAtKH87" resolve="it" />
                                     </node>
                                     <node concept="2yIwOk" id="46dRhkcG1kN" role="2OqNvi" />
                                   </node>

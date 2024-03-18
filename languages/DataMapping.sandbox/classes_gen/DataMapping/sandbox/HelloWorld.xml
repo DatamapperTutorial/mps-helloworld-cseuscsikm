@@ -2,9 +2,7 @@
 <DataMapping>  
   <FileEncoding>IBM_852</FileEncoding>
   <FormatList></FormatList>
-  <ParamDef>    
-    <Parameter name="Név" type="StringType" caption="Kérem adja meg a nevét" dictionaryId="" />
-  </ParamDef>
+  <ParamDef></ParamDef>
   <SourceDefList>    
     <SourceDef name="Dolgozok">      
       <EntityRef entity="Person" alias="p" />
@@ -13,22 +11,7 @@
   </SourceDefList>
   <FilterDef></FilterDef>
   <MappingDefList>    
-    <ParameterMappingDef name="sor">      
-      <ValueDef name="Név">        
-        <ParamValue name="Név" />
-        <FormatList></FormatList>
-      </ValueDef>
-    </ParameterMappingDef>
+    <ParameterMappingDef name=""></ParameterMappingDef>
   </MappingDefList>
-  <Renderings>    
-    <TXTRenderingDef>      
-      <Filename value="helloworld.txt" />
-      <HeaderType value="no" />
-      <CustomHeader value="" />
-      <EOF value="false" />
-      <MappingDefs>        
-        <MappingDefRef name="sor" />
-      </MappingDefs>
-    </TXTRenderingDef>
-  </Renderings>
+  <Renderings></Renderings>
 </DataMapping>

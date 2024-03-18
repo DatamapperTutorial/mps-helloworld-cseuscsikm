@@ -1526,7 +1526,7 @@
     <property role="EcuMT" value="2807072621951130357" />
     <property role="3GE5qa" value="rendering-base" />
     <property role="TrG5h" value="MappingDefRef" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2rOIqPq7LFQ" role="1TKVEi">
       <property role="IQ2ns" value="2807072621951130358" />
       <property role="20kJfa" value="mappingDef" />
@@ -1612,7 +1612,7 @@
     <property role="3GE5qa" value="rendering-xls-templated" />
     <property role="TrG5h" value="XlsSection" />
     <property role="34LRSv" value="Szekció" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3jxP3WL9Cr2" role="1TKVEi">
       <property role="IQ2ns" value="3810560127604786882" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -1630,7 +1630,7 @@
     <property role="EcuMT" value="3810560127604786881" />
     <property role="3GE5qa" value="rendering-xls-templated" />
     <property role="TrG5h" value="XlsRow" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3jxP3WL9Cr6" role="1TKVEi">
       <property role="IQ2ns" value="3810560127604786886" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -1649,7 +1649,7 @@
     <property role="3GE5qa" value="rendering-base" />
     <property role="TrG5h" value="NumericLiteral" />
     <property role="34LRSv" value="szám érték" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3jxP3WLqZLu" role="PzmwI">
       <ref role="PrY4T" to="n39g:1Uxe_CjJt2V" resolve="INumericLiteral" />
     </node>
@@ -1662,7 +1662,7 @@
     <property role="3GE5qa" value="rendering-base" />
     <property role="TrG5h" value="StringLiteral" />
     <property role="34LRSv" value="szöveg érték" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3jxP3WLqZL$" role="PzmwI">
       <ref role="PrY4T" to="n39g:4xddrCUE8Nw" resolve="IStringLiteral" />
     </node>
@@ -1675,7 +1675,7 @@
     <property role="3GE5qa" value="rendering-base" />
     <property role="TrG5h" value="EmptyValue" />
     <property role="34LRSv" value="üres" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3jxP3WLFpaW" role="PzmwI">
       <ref role="PrY4T" node="3jxP3WLodqM" resolve="IXlsAbstractValue" />
     </node>
@@ -1695,7 +1695,7 @@
     <property role="3GE5qa" value="mapping-def.param-def" />
     <property role="TrG5h" value="ParameterMappingDef" />
     <property role="34LRSv" value="paraméter mapping" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7IX0y0HbJVc" role="PzmwI">
       <ref role="PrY4T" node="7IX0y0Hg1c1" resolve="IMappingDef" />
     </node>
@@ -1719,7 +1719,7 @@
     <property role="EcuMT" value="8916285174485447504" />
     <property role="3GE5qa" value="mapping-def" />
     <property role="TrG5h" value="EmptyMappingDef" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7IX0y0Hindh" role="PzmwI">
       <ref role="PrY4T" node="7IX0y0Hg1c1" resolve="IMappingDef" />
     </node>
@@ -1739,7 +1739,7 @@
     <property role="3GE5qa" value="mapping-def.function-def" />
     <property role="TrG5h" value="ParameterFunctionRef" />
     <property role="34LRSv" value="függvény" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7IX0y0HrC96" role="1TKVEi">
       <property role="IQ2ns" value="8916285174487876166" />
       <property role="20kJfa" value="function" />

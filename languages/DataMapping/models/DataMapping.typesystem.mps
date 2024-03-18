@@ -390,7 +390,7 @@
                     <node concept="17R0WA" id="1Fd8L6Gx6yU" role="3uHU7w">
                       <node concept="2OqwBi" id="1Fd8L6GwR6B" role="3uHU7B">
                         <node concept="37vLTw" id="1Fd8L6GwR6C" role="2Oq$k0">
-                          <ref role="3cqZAo" node="K0faAtKH89" />
+                          <ref role="3cqZAo" node="K0faAtKH89" resolve="it" />
                         </node>
                         <node concept="2yIwOk" id="1Fd8L6GwR6D" role="2OqNvi" />
                       </node>
@@ -403,7 +403,7 @@
                     </node>
                     <node concept="17QLQc" id="1Fd8L6GwR6E" role="3uHU7B">
                       <node concept="37vLTw" id="1Fd8L6GwR6F" role="3uHU7B">
-                        <ref role="3cqZAo" node="K0faAtKH89" />
+                        <ref role="3cqZAo" node="K0faAtKH89" resolve="it" />
                       </node>
                       <node concept="1YBJjd" id="1Fd8L6GwR6G" role="3uHU7w">
                         <ref role="1YBMHb" node="1Fd8L6GwAjN" resolve="formatAbstractItem" />
