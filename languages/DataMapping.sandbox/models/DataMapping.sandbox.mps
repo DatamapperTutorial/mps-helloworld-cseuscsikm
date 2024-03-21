@@ -6,7 +6,9 @@
     <use id="29b980d1-6210-4d27-916e-07bc0552ea93" name="Base" version="0" />
     <use id="be5be3d6-1572-4d96-87fb-b6ad07c44926" name="DataSource" version="0" />
   </languages>
-  <imports />
+  <imports>
+    <import index="nnpo" ref="r:8c4b0471-0d15-46f2-98f9-99e324485aac(DataSource.WebAPI)" implicit="true" />
+  </imports>
   <registry>
     <language id="29b980d1-6210-4d27-916e-07bc0552ea93" name="Base">
       <concept id="7381255753175048646" name="Base.structure.GroupFunctionDef" flags="ng" index="2q8tOT">
@@ -43,12 +45,29 @@
     </language>
     <language id="22a6c585-e3ba-46bc-922c-aa7eb0f6869b" name="DataMapping">
       <concept id="5698712113347732316" name="DataMapping.structure.FormatList" flags="ng" index="mmOs_" />
+      <concept id="2885009803650497646" name="DataMapping.structure.SourceEntityRef" flags="ng" index="2w4I5f">
+        <reference id="2177791060995930122" name="entity" index="1B_Y_$" />
+      </concept>
+      <concept id="2885009803650492549" name="DataMapping.structure.SourceDef" flags="ng" index="2w4Jm$">
+        <child id="2885009803650902977" name="items" index="2wa3rw" />
+      </concept>
+      <concept id="2885009803650405212" name="DataMapping.structure.ValueDef" flags="ng" index="2w4STX">
+        <child id="2671830247026769673" name="value" index="3e81X" />
+        <child id="2776361023265130610" name="formats" index="DsHnm" />
+      </concept>
+      <concept id="2885009803650402132" name="DataMapping.structure.MappingDef" flags="ng" index="2w4TDP">
+        <reference id="4723674666656218241" name="sourceDef" index="1d0Y6k" />
+        <child id="6919509579832554226" name="items" index="1tOZIZ" />
+      </concept>
       <concept id="2397374006472625757" name="DataMapping.structure.RenderingList" flags="ng" index="wMQ2C">
         <child id="2397374006472625758" name="items" index="wMQ2F" />
       </concept>
       <concept id="710637544294449" name="DataMapping.structure.AbstractRenderingDef" flags="ng" index="MpGTz">
         <property id="710637545863555" name="filename" index="MvFZh" />
         <property id="710637545926211" name="headerType" index="MvUwh" />
+      </concept>
+      <concept id="710637544358039" name="DataMapping.structure.CSVRenderingDef" flags="ng" index="MpWr5">
+        <child id="2807072621952829240" name="mappingDefs" index="1WNrUl" />
       </concept>
       <concept id="710637544695506" name="DataMapping.structure.TXTRenderingDef" flags="ng" index="Mqe20">
         <child id="2807072621951909818" name="mappingDefs" index="1WR$on" />
@@ -76,14 +95,20 @@
         <reference id="8916285174487876166" name="function" index="1mOS1A" />
         <child id="8916285174487876164" name="arguments" index="1mOS1$" />
       </concept>
+      <concept id="6919509579832544332" name="DataMapping.structure.MappingAttributeRef" flags="ng" index="1tOWk1" />
       <concept id="2126067059555459534" name="DataMapping.structure.MappingStringLiteral" flags="ng" index="3KXMXR" />
       <concept id="8220772454947627233" name="DataMapping.structure.Template" flags="ng" index="1QryKv">
         <property id="8220772454947792613" name="fileEncoding" index="1QraCr" />
+        <child id="2885009803651017458" name="sourceDefList" index="2waJvj" />
         <child id="2397374006472645227" name="renderingItems" index="wMViu" />
         <child id="2776361023265230749" name="defaultFormatList" index="Dsl8T" />
         <child id="8596373292600955405" name="paramDef" index="2TrI7V" />
         <child id="4417412243802864873" name="filterDef" index="Z6n7x" />
         <child id="6919509579832576562" name="mappingDefList" index="1tO$dZ" />
+      </concept>
+      <concept id="5306370290486463250" name="DataMapping.structure.IAttributeRef" flags="ngI" index="1UxsyS">
+        <reference id="5306370290486463251" name="entityRef" index="1UxsyT" />
+        <reference id="5306370290486463252" name="attribute" index="1UxsyY" />
       </concept>
       <concept id="2807072621951130357" name="DataMapping.structure.MappingDefRef" flags="ng" index="1WUUdo">
         <reference id="2807072621951130358" name="mappingDef" index="1WUUdr" />
@@ -295,6 +320,63 @@
           </node>
         </node>
         <node concept="mmOs_" id="4bm1UuC3gZ6" role="1mKxID" />
+      </node>
+    </node>
+  </node>
+  <node concept="1QryKv" id="4bm1UuCb$GM">
+    <property role="3GE5qa" value="Adatkapcsolatok" />
+    <property role="TrG5h" value="szemelyek" />
+    <property role="1QraCr" value="78m3fS4uqvR/Win_1250" />
+    <node concept="mmOs_" id="4bm1UuCb$GN" role="Dsl8T" />
+    <node concept="Z00cG" id="4bm1UuCb$GP" role="Z6n7x" />
+    <node concept="2w4TDP" id="4bm1UuCb$LS" role="1tO$dZ">
+      <property role="TrG5h" value="Személyek" />
+      <ref role="1d0Y6k" node="4bm1UuCb$Im" resolve="Tétel" />
+      <node concept="2w4STX" id="4bm1UuCb$M1" role="1tOZIZ">
+        <property role="TrG5h" value="Azonosító" />
+        <node concept="1tOWk1" id="4bm1UuCb$M7" role="3e81X">
+          <ref role="1UxsyT" node="4bm1UuCj9CH" resolve="személy" />
+          <ref role="1UxsyY" to="nnpo:5zS6iTfafJw" resolve="PersonId" />
+        </node>
+        <node concept="mmOs_" id="4bm1UuCb$M3" role="DsHnm" />
+      </node>
+      <node concept="2w4STX" id="4bm1UuCb$Mj" role="1tOZIZ">
+        <property role="TrG5h" value="Családinév" />
+        <node concept="1tOWk1" id="4bm1UuCb$Mu" role="3e81X">
+          <ref role="1UxsyT" node="4bm1UuCj9CH" resolve="személy" />
+          <ref role="1UxsyY" to="nnpo:61_ZPsbYaGi" resolve="FamilyName" />
+        </node>
+        <node concept="mmOs_" id="4bm1UuCb$Mm" role="DsHnm" />
+      </node>
+      <node concept="2w4STX" id="4bm1UuCb$MH" role="1tOZIZ">
+        <property role="TrG5h" value="Keresztnév" />
+        <node concept="1tOWk1" id="4bm1UuCb$MV" role="3e81X">
+          <ref role="1UxsyT" node="4bm1UuCj9CH" resolve="személy" />
+          <ref role="1UxsyY" to="nnpo:61_ZPsbYbd0" resolve="Forename" />
+        </node>
+        <node concept="mmOs_" id="4bm1UuCb$MK" role="DsHnm" />
+      </node>
+    </node>
+    <node concept="wMQ2C" id="4bm1UuCb$GR" role="wMViu">
+      <node concept="MpWr5" id="4bm1UuCb$GS" role="wMQ2F">
+        <property role="MvFZh" value="szemelyek.csv" />
+        <node concept="1WUUdo" id="4bm1UuCfmGT" role="1WNrUl">
+          <ref role="1WUUdr" node="4bm1UuCb$LS" resolve="Tétel" />
+        </node>
+      </node>
+    </node>
+    <node concept="2TrIYF" id="4bm1UuCb$Hi" role="2TrI7V">
+      <node concept="2TrIYj" id="4bm1UuCj9Dk" role="2TrIYC">
+        <property role="TrG5h" value="nxn_maidátum" />
+        <property role="AWlQn" value="Mai dátum" />
+        <node concept="1DSw2W" id="4bm1UuCj9Dw" role="2TrIY8" />
+      </node>
+    </node>
+    <node concept="2w4Jm$" id="4bm1UuCb$Im" role="2waJvj">
+      <property role="TrG5h" value="Személyek" />
+      <node concept="2w4I5f" id="4bm1UuCj9CH" role="2wa3rw">
+        <property role="TrG5h" value="személy" />
+        <ref role="1B_Y_$" to="nnpo:61_ZPsbY9cY" resolve="SzemélyNév" />
       </node>
     </node>
   </node>
